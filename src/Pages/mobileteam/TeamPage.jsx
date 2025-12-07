@@ -174,12 +174,10 @@ const grouped = teamMembers.reduce((acc, member) => {
 
 export default function OurPeople() {
   return (
-       <div className="w-full px-4 md:px-6 py-10 bg-gray-50">
-      <h1 className="text-4xl font-bold mb-12 text-center">Our People</h1>
-
+    <div className="w-full px-4 md:px-6 py-10 bg-gray-50">
       {Object.keys(grouped).map((category) => (
         <div key={category} className="mb-16">
-          <h2 className="text-3xl mb-8 border-b pb-2 text-center md:text-left">
+          <h2 className="first text-3xl mb-8 border-b pb-2 text-center md:text-left">
             {category}
           </h2>
 
@@ -191,13 +189,13 @@ export default function OurPeople() {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-32 h-32 object-cover rounded-full mb-4 border shadow-sm"
+                  className="second w-32 h-32 object-cover rounded-full mb-4 border shadow-sm"
                 />
-                <h3 className="text-xl font-bold">{member.name}</h3>
-                <p className="text-gray-600 font-medium">{member.role}</p>
-                <p className="text-gray-500 text-sm mt-2">{member.description}</p>
+                <h3 className="third text-xl font-bold">{member.name}</h3>
+                <p className="fourth text-gray-600 font-medium">{member.role}</p>
+                <p className="five text-gray-500 text-sm mt-2">{member.description}</p>
 
-                <div className="flex space-x-4 mt-4">
+                <div className="six flex space-x-4 mt-4">
                   {member.social.linkedin && (
                     <a
                       href={member.social.linkedin}
