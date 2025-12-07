@@ -621,3 +621,10 @@ body {
   animation: fadeInUp 1s ease-in-out 0s forwards;
   animation-delay: 4s;
 }
+
+.six {
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation-delay: 5s;
+}
+
